@@ -1,0 +1,24 @@
+//Theme Colors
+//Primary Colors
+$primary-dark-grey: #19191E;
+$primary-cosmic-blue: #0030FF;
+$primary-white: #FFFFFF;
+
+//Background Colors
+$background-medium-grey: #C8C8C8;
+$background-light-grey: #F2F2F2;
+
+//Accent Colors
+$accent-red: #FF2E54;
+$accent-yellow: #F7FF3D;
+$accent-cyan: #00FAFF;
+$accent-magenta: #E533FF;
+$accent-green: #00FF80;
+
+//Override bootstrap variables
+$font-size-base: 16px;
+$line-height-base: 1.25; // 20/16
+$font-family-sans-serif: 'gotham_med',Helvetica,Arial,sans-serif;
+$font-family-serif:      'miller',"Times New Roman",Times,serif;
+$font-family-gotham-book: 'gotham_book',Helvetica,Arial,sans-serif;
+$text-color: $primary-dark-grey;

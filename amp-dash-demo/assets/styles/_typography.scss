@@ -1,0 +1,18 @@
+@import "./variables";
+@import "./mixins";
+
+.font-gotham {
+  &-medium {
+    @include font-classes($font-family-sans-serif, 400);
+    letter-spacing: 0.12em; //em(2px);
+  }
+  &-book {
+    @include font-classes($font-family-gotham-book, 400);
+    letter-spacing: 0.12em; //em(2px);
+  }
+}
+
+.font-miller {
+   @include font-classes($font-family-serif, 400);
+   letter-spacing: normal;
+}
