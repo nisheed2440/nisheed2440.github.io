@@ -1,0 +1,7 @@
+.Header {
+    background-color: #56b5d5;
+}
+
+.Navigation-group:last-child {
+    display: none;
+}

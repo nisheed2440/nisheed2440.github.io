@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+    window.frctl = {
+        env: 'static'
+    };
+    </script>
+    <script>var cl = document.querySelector('html').classList; cl.remove('no-js'); cl.add('has-js');</script>
+    <link rel="shortcut icon" href="../_fractulus/assets/favicon.ico" type="image/ico">
+
+<link rel="stylesheet" href="../_theme/css/default.css?cachebust=1.2.0" type="text/css">
+
+<link rel="stylesheet" href="../_fractulus/styles/theme.css?cachebust=1.2.0" type="text/css">
+
+
+<title>Creating Components | Fractulus Docs</title>
+
+</head>
+<body>
+
+
+
+<div class="Frame" id="frame">
+
+    <div class="Frame-header">
+        <div class="Header">
+    <button class="Header-button Header-navToggle" data-action="toggle-sidebar">
+        <svg class="Header-navToggleIcon Header-navToggleIcon--open" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M19 6.4L17.6 5 12 10.6 6.4 5 5 6.4 10.6 12 5 17.6 6.4 19 12 13.4 17.6 19 19 17.6 13.4 12z"/>
+</svg>
+
+        <svg class="Header-navToggleIcon Header-navToggleIcon--closed" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+</svg>
+
+    </button>
+    <a href="../index.html" class="Header-title" data-pjax>Fractulus Docs</a>
+</div>
+
+    </div>
+
+    <div class="Frame-body" data-role="body">
+
+        <div class="Frame-panel Frame-panel--main" data-role="main">
+            <div class="Frame-inner" id="pjax-container">
+            
+
+<div class="Document">
+
+    <div class="Document-header">
+        
+        <h1 class="Document-title">Creating Components</h1>
+        
+
+
+        
+    </div>
+
+    <div class="Document-content">
+
+    
+
+<div class="Prose">
+
+
+
+    
+    
+    <p>The components whether atoms/molecules/organisms etc. go under the following heirarchy. The hierarchy <code>src/components/components/*</code> might look a bit misleading but since fractulus is a wrapper over <a href="https://fractal.build/guide/getting-started">fractal</a>, we did not want to change something that is already working well.</p>
+<p>The <code>component.config.json</code> defines the collection i.e <code>components</code>, specifying the component root template that needs to be used or the rendering each of the components, or the title of the collection etc. For more information about collections, read up on the fractal docs <a href="https://fractal.build/guide/collections">here</a>.</p>
+<code class="lang-bash"><pre>fractulus
+├─ *
+├─ src
+└─ *
+   ├─ components
+   └─ *
+      └─ components
+         ├─ <span class="hljs-built_in">test</span>                    <span class="hljs-comment">#The test component</span>
+         └─ component.config.json</pre></code><h2 id="component-structure">Component Structure</h2>
+<p>Each component is a self contained entity where developers can work in isolation. Conside you having a component <code>src/components/components/my-component</code>. Each component folder contains the following files.</p>
+<code class="lang-bash"><pre>my-component
+├─ my-component.config.json     <span class="hljs-comment"># (Required) The component config file</span>
+├─ my-component.hbs             <span class="hljs-comment"># (Required) The component template file</span>
+├─ my-component.js              <span class="hljs-comment"># (Optional) The component stimulus script file in ES6 format</span>
+├─ my-component.scss            <span class="hljs-comment"># (Optional) The component SASS file</span>
+├─ partials                     <span class="hljs-comment"># (Optional) The handlebars partials you wish to include</span>
+├─ package.json                 <span class="hljs-comment"># (Required) The package.json file which contains the rollup config for the component</span>
+└─ README.md                    <span class="hljs-comment"># (Optional) The readme file for the component</span></pre></code>
+    
+
+
+</div>
+
+
+
+    </div>
+
+</div>
+
+
+            </div>
+        </div>
+
+        <div class="Frame-handle" data-role="frame-resize-handle"></div>
+        
+        <div class="Frame-panel Frame-panel--sidebar" data-role="sidebar">
+            <nav class="Navigation">
+
+    
+<div class="Navigation-group">
+
+<div class="Tree" data-behaviour="tree" id="tree-docs">
+    <h3 class="Tree-title">documentation</h3>
+    <ul class="Tree-items Tree-depth-1">
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../index.html" data-pjax>
+                <span>Overview</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="folder-structure.html" data-pjax>
+                <span>Folder Structure</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity is-current" data-state="current" data-role="item">
+            <a class="Tree-entityLink" href="" data-pjax>
+                <span>Creating Components</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="creating-docs.html" data-pjax>
+                <span>Creating Docs</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-docs-collection-customization">
+            <h4 class="Tree-collectionLabel" data-role="toggle">
+                <span>Customization</span>
+            </h4>
+            <ul class="Tree-collectionItems" data-role="items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="customization/gulp-tasks.html" data-pjax>
+                <span>Gulp Tasks</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="customization/component-template.html" data-pjax>
+                <span>Component Template</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="customization/page-template.html" data-pjax>
+                <span>Page Template</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="customization/adding-vendor-files.html" data-pjax>
+                <span>Adding Vendor Files</span>
+                
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+
+    </ul>
+</div>
+
+</div>
+
+
+
+    
+<div class="Navigation-group">
+
+<div class="Tree" data-behaviour="tree" id="tree-components">
+    <h3 class="Tree-title">core</h3>
+    <ul class="Tree-items Tree-depth-1">
+        
+    
+
+    </ul>
+</div>
+
+</div>
+
+
+
+</nav>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+<script src="../_fractulus/scripts/polyfill.js?cachebust=1.2.0"></script>
+
+<script src="../_theme/js/mandelbrot.js?cachebust=1.2.0"></script>
+
+<script src="../_fractulus/scripts/theme.js?cachebust=1.2.0"></script>
+
+
+
+</body>
+</html>

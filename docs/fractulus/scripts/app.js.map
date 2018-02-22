@@ -1,0 +1,1 @@
+{"version":3,"file":"app.js","sources":["../../src/app.js"],"sourcesContent":["import {Application} from \"stimulus\";\r\n\r\nexport default Application.start();\r\n"],"names":["Application","start"],"mappings":";;;;AAEA,UAAeA,qBAAYC,KAAZ,EAAf;;;;;;;;"}
