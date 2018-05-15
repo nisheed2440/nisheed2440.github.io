@@ -33,7 +33,10 @@
             var logger = document.getElementById('touch-logger');
             box.addEventListener('touchstart', function(e){
                 logger.innerHTML = 'Total touches detected on the screen: ' + e.touches.length;
-            }, false)
+            }, false);
+            box.addEventListener('touchmove', function(e){
+                logger.innerHTML = 'Total touches detected on the screen: ' + e.touches.length;
+            }, false);
 
             }, false)
     </script>
