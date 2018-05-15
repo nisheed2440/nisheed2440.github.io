@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Touch Test</title>
+</head>
+<body>
+    <style>
+        html,body{
+            box-sizing: border-box;
+            min-height: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        html *,body *{
+            box-sizing: border-box;
+        }
+        #touch-box{
+            width: 100%;
+            height: 50%;
+            background-color: #CCCCCC;
+            border: 1px solid #999999;
+        }
+    </style>
+    <div id="touch-box"></div>
+    <div id="touch-logger"></div>
+    <script>
+        window.addEventListener('load', function(){ // on page load
+            var box = document.getElementById('touch-box');
+            var logger = document.getElementById('touch-logger');
+            box.addEventListener('touchstart', function(e){
+                logger.innerHTML = 'Total touches detected on the screen: ' + e.touches.length;
+            }, false)
+
+            }, false)
+    </script>
+</body>
+</html>
